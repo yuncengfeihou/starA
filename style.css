@@ -122,6 +122,27 @@
     white-space: pre-wrap;
 }
 
+/* Add this to your existing CSS */
+#favorites-popup-content .fav-actions .favorite-screenshot-icon {
+    color: #57aeff; /* 一个不同的颜色，例如蓝色系 */
+    /* 其他样式可以和 .fa-pencil, .fa-trash 类似 */
+}
+
+/* (可选) 调整动作图标的整体间距或大小 */
+#favorites-popup-content .fav-actions i {
+    /* cursor: pointer; */
+    /* margin-left: 10px; */ /* 调整间距，如果图标变多了 */
+    /* padding: 5px; */
+    /* font-size: 1.1em; */ /* 稍微增大图标 */
+}
+
+/* 确保弹窗内容区域的 overflow-y: auto; 能够正常工作 */
+#favorites-popup-content .favorites-list {
+    /* ... existing styles ... */
+    /* overflow-y: auto; /* 列表本身可能不需要，因为父级有滚动 */
+    /* max-height: calc(70vh - 150px); /* 估算一个高度，减去头部和底部分页等的高度 */ */
+}
+
 .favorite-toggle-icon i.fa-solid {
     color: #ffcc00;
 }
